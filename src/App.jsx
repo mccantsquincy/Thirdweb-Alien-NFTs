@@ -18,7 +18,7 @@ function App() {
     async function getMyNfts() {
       // fetching data here
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x48F6e220CD244d881B021F49415f60Dd9D683C18&order_direction=asc"
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0x48F6e220CD244d881B021F49415f60Dd9D683C18"
       );
       // setting useState hook from the default empty array and filling in setstate to data fetched from api here
       const sortedAlienList = openseaData.data.assets
